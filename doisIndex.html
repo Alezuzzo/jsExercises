@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calcAge(yearBirth, monthBirth, dayBirth) {
+        var d = new Date(),
+          currentYear = d.getFullYear(),
+          currentMonth = d.getMonth() + 1,
+          currentDay = d.getDate(),
+          yearBirth = +yearBirth,
+          monthBirth = +monthBirth,
+          dayBirth = +dayBirth,
+          manyYear = currentYear - yearBirth;
+
+        if (
+          currentMonth < monthBirth ||
+          (currentMonth == monthBirth && currentDay < dayBirth)
+        ) {
+          manyYear--;
+        }
+
+        return manyYear < 0 ? 0 : manyYear;
+      }
+
+      console.log(calcAge(1997, 03, 14)); //  25
+    </script>
+  </body>
+</html>
