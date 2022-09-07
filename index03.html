@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+<body>
+    <script>
+        var n1 = parsetInt(prompt("Digite o primeiro número: ", ""));
+        var n2 = parsetInt(prompt("Digite o segundo número: ", ""));
+
+        document.write("<table><tr><th>Operação</th><th>Valor</th></tr>")
+
+        sum = n1 + n2;
+
+        document.write("<tr><td>" + num1 + " + " + num2 + "</td><td>" + soma + "</td></tr><br>");
+
+        mult = n1 * n2;
+
+        document.write("<tr><td>" + num1 + " * " + num2 + "</td><td>" + mult + "</td></tr><br>");
+
+        div =  num1 / num2;
+
+        document.write("<tr><td>" + n1 + " / " + n2 + "</td><td>" + div + "</td></tr><br>");
+
+        rest = n1 % n2;
+
+        document.write("<tr><td>" + num1 + " % " + num2 + "</td><td>" + rest + "</td></tr><br>");
+
+        document.write("</table>");
+    </script>
+</body>
+</html>

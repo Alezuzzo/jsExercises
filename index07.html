@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <script>
+        var higher = 0;
+        var higherValue = "";
+        
+        for(var i = 0; i < 5; i++){
+            var name = prompt("Digite o nome");
+            var altura = prompt("Digite a altura");
+            
+            if(altura > higher){
+                higher = altura;
+                higherValue = name;
+            }
+         }
+        document.write(higherValue  + "<br>" +  higher);
+    </script> 
+</body>
+</html>
